@@ -1,5 +1,4 @@
-﻿// John Scerri 12/5/17
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,6 +26,6 @@ public class cameraFollowScript : MonoBehaviour
 		gameObject.transform.position = new Vector3(payerPos[0], camPos[1], payerPos[2] - dist);
 
 		//Change  background colour Day/night (10 mins)
-		Camera.main.backgroundColor = Color.Lerp(Camera.main.backgroundColor, Color.black, Time.deltaTime / 60);
+		Camera.main.backgroundColor = Color.Lerp(Camera.main.backgroundColor, Color.black, Time.deltaTime / 10);
 	}
 }
